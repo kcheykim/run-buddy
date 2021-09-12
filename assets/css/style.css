@@ -2,7 +2,9 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 /* apply styles to the <body> section */
 body {
     /* more alphanuerical value */
@@ -14,10 +16,15 @@ body {
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
+}
+
+/*apply style to the h1 in header section */
+header h1 {
     font-weight: bold;
     font-size: 36px;
     color: #fce138;
     margin: 0;
+    display: inline;
 }
 
 /* apply style to the link in the header section */
@@ -44,11 +51,29 @@ header nav ul li a {
     font-size: 22 px;
 }
 
-/* apply style to the h1 section of the header */
-header h1 {
-    font-weight: bold;
-    font-size: 36px;
-    color:#fce138;
-    margin: 0;
+/* apply style to the footer section */
+footer {
+    background: #fce138;
+    width: 100;
+    padding: 40px 35px;
+}
+
+/* apply style to the left <h2> of the footer */
+footer h2 {
     display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
+
+/* apply style to the right <div> of the footer */
+footer div {
+    float:right;
+    line-height: 1.5;
+    text-align: right;
+}
+
+/* apply style to the link in the footer <a> */
+footer a {
+    color: #024e76;
 }
