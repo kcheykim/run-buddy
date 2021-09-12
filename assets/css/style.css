@@ -1,0 +1,54 @@
+/* default magin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* apply styles to the <body> section */
+body {
+    /* more alphanuerical value */
+    color: #39a6b2;
+    font-family: Helvetica, Arial, sans-seif;
+}
+
+/* apply style to <header> section */
+header {
+    padding: 20px 35px;
+    background-color: #39a6b2;
+    font-weight: bold;
+    font-size: 36px;
+    color: #fce138;
+    margin: 0;
+}
+
+/* apply style to the link in the header section */
+header a {
+    text-decoration: none;
+    color: #fce138;
+}
+
+/* apply style to navigation link */
+header nav {
+    float: right;
+    margin: 7px 0;
+}
+
+/* apply style to the navigation list property */
+header nav ul li {
+    display: inline;
+}
+
+/* apply style to the naviation list link */
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22 px;
+}
+
+/* apply style to the h1 section of the header */
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color:#fce138;
+    margin: 0;
+    display: inline;
+}
