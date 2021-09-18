@@ -21,7 +21,7 @@
 
 .secondary-content {
     width: 80%;
-    margin: center;
+    margin: 0 auto;
     color: #024e76;
 }
 
@@ -40,8 +40,4 @@
     margin: 15px 20px 15px 20px;
 }
 
-.secondary-content {
-    color: #39a6b2;
-    margin: 10px 0 10px 0;
-}
 
