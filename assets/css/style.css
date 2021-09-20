@@ -14,6 +14,9 @@ body {
 
 /* apply style to <header> section */
 header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 20px 35px;
     background-color: #39a6b2;
 }
@@ -24,7 +27,7 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
-    display: inline;
+   /* remove this --> display: inline; */
 }
 
 /* apply style to the link in the header section */
@@ -35,7 +38,7 @@ header a {
 
 /* apply style to navigation link */
 header nav {
-    float: right;
+    /* remove this --> float: right; */
     margin: 7px 0;
 }
 
