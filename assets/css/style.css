@@ -42,6 +42,7 @@ header nav {
 /* apply style to the navigation list property */
 header nav ul li {
     display: inline;
+    margin: 10px 15px;
 }
 
 /* apply style to the naviation list link */
@@ -89,6 +90,7 @@ section {
     background-size: cover;
     background-position: center;
     position: relative;
+    align-items: flex-start;
 }
 /* Hero Style End */
 
@@ -103,6 +105,10 @@ section {
     position: absolute;
     bottom: 120px;
     right: 140px;
+}
+
+.hero-cta {
+    line-height: 1.2;
 }
 
 /* layout and styling for form */
@@ -188,7 +194,7 @@ section {
   }
 
   .section-title {
-    font-size: 55px;
+    font-size: 48px;
     display: inline-block;
     color: #024e76;
     margin-bottom: 35px;
@@ -294,3 +300,39 @@ section {
 .contact-info a {
     color:#fce138;
 }
+
+/*
+@media screen and (max-width: 900px) {
+    a {
+        color: aquamarine;
+    }
+
+    h1{
+        font-size: 200px;
+    }
+} */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header h1 a {
+      /* this will be applied on any screen smaller than 980px */
+      color: tomato;
+    }
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    header h1 {
+      /* this will be applied on any screen between 768px and 575px */
+      font-size: 80px;
+    }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    header h1 {
+      /* this will be applied on any screen smaller than 575px */
+      font-size: 100px;
+    }
+  }
+  
