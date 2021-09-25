@@ -14,11 +14,11 @@ body {
 
 /* apply style to <header> section */
 header {
+    padding: 20px 35px;
+    background-color: #39a6b2;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px 35px;
-    background-color: #39a6b2;
 }
 
 /*apply style to the h1 in header section */
@@ -27,7 +27,6 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
-   /* remove this --> display: inline; */
 }
 
 /* apply style to the link in the header section */
@@ -38,17 +37,10 @@ header a {
 
 /* apply style to navigation link */
 header nav {
-    /* remove this --> float: right; */
     margin: 7px 0;
 }
 
-/* apply style to the navigation list property.
-Now remove for flexbox.
-header nav ul li {
-    display: inline;
-} */
-
-/* Add rules for flexbox */
+/* apply style to the navigation list property */
 header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -66,12 +58,12 @@ header nav ul li a {
 
 /* apply style to the footer section */
 footer {
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background: #fce138;
-    width: 100;
-    padding: 40px 35px;
 }
 
 /* apply style to the left <h2> of the footer */
@@ -98,16 +90,14 @@ section {
 
 /* Hero Style Start */
 .hero {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-/* Hero Style End */
 
-/* Adding hero-cta class style and hero-cta h2 */
 .hero-cta {
     width: 35%;
     text-align: right;
@@ -115,13 +105,13 @@ section {
     color: #fff;
     font-size: 18px;
     line-height: 1.3;
-}
-
-.hero-cta h2 {
+ }
+  
+ .hero-cta h2 {
     font-style: italic;
     font-size: 55px;
     color: #fce138;
-}
+ }
 
 /* div style for hero-form */
 .hero-form {
@@ -144,15 +134,11 @@ section {
     margin: 0;
 }
 
-.hero-form p {
-    margin: 5px 0 15px 0;
-}
-
 /* adding style to input field */
 .form-input {
     border: 1px solid #024e76;
     display: block;
-    padding: 7ps 15px;
+    padding: 7px 15px;
     font-size: 16px;
     color: #024e76;
     width: 100%;
@@ -172,6 +158,11 @@ section {
     font-size: 16px;
 }
 
+/* styling the first section class 
+.intro {
+    text-align: center;
+}*/
+
 .intro p {
     line-height: 1.7;
     color: #39a6b2;
@@ -181,9 +172,6 @@ section {
     text-align: center;
 }
 
-.steps {
-    background: #fce138;
-}
 .step {
     margin: 50px auto;
     padding-bottom: 50px;
@@ -194,39 +182,49 @@ section {
     align-items: center;
     justify-content: space-between;
 }
+
+  /* general clean-up */
   
-  .step h3 {
+ .steps {
+     background-color: #fce138;
+     text-align: center;
+  } 
+  
+ .step-info {
+     flex: 2 70%;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+ } 
+ 
+.step-img {
+    flex: 1 12%;
+    margin-right: 20px;
+}
+
+.step-img img {
+    max-width: 100%;
+}
+
+.step-text {
+    flex: 12;
+}
+  
+.step h3 {
     color: #024e76;
     font-size: 46px;
     flex: 1 30%;
-  }
-  .step-text {
-      flex: 12;
-  }
-  
-  .step-text p {
+}
+     
+.step-text p {
     color: #39a6b2;
     font-size: 18px;
   }
 
-  .step-text h4 {
-      font-size: 26px;
-      line-height: 1.5;
-      color: #024e76;
-  }
-  .step-info {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      flex: 2 70%;
-  }
-  .step-img {
-      flex: 1 12%;
-      margin-right: 20px;
-  }
-  
-  .step-img img {
-      max-width: 100%;
+ .step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: #024e76;
   }
 
   .section-title {
@@ -239,6 +237,7 @@ section {
     width: 50%;
   }
   
+  
   .primary-border {
     border-color: #fce138;
   }
@@ -246,7 +245,7 @@ section {
   .secondary-border {
     border-color: #39a6b2;
   }
-  
+
 /* class in the article portion */
 
 .trainers {
@@ -256,6 +255,8 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+  
+/* class in the article portion */
 .trainer {
     margin: 20px;
     background: #024e76;  
@@ -271,6 +272,15 @@ section {
     padding: 25px;
     line-height: 1.3;
 }
+
+/*
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+} */
 
 .trainer-bio h3 {
     font-size: 28px;
@@ -295,6 +305,11 @@ section {
     color: #fce138;
 }
 
+.contact-info iframe {
+    height: 400px;    
+}
+
+/* vertical-align lift the content to the top iwith the text-align left */
 .contact-info {
     display: flex;
     justify-content: space-between;
@@ -306,26 +321,26 @@ section {
     margin: 15px;
 }
 
-/* vertical-align lift the content to the top iwith the text-align left */
-.contact-info div {
-    color: white;
-}
-
 .contact-info h3 {
     color: #fce138;
     font-size: 32px;
 }
 
+.contact-info div {
+    color: white;
+}
+
 .contact-info p, .contact-info address {
     margin: 20px 0;
     line-height:  1.5;
-    font-size: 16px;
+    font-size: 20px 0;
     font-style: normal;
 }
 
 .contact-info a {
     color:#fce138;
 }
+
 .contact-form input, .contact-form textarea {
     border: 1px solid #024e76;
     display: block;
@@ -335,9 +350,9 @@ section {
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
-}
-
-.contact-form button {
+  }
+  
+ .contact-form button {
     width: 100%;
     border: none;
     background: #fce138;
@@ -345,8 +360,58 @@ section {
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
-}
+  }
 
-.flex-row {
-    display: flex;
-}
+  .flex-row {
+      display: flex;
+  }
+
+/*
+@media screen and (max-width: 900px) {
+    a {
+        color: aquamarine;
+    }
+
+    h1{
+        font-size: 200px;
+    }
+} */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100;
+        justify-content: center;
+    }
+    
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+ 
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+ 
+  }
+  
