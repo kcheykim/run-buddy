@@ -68,6 +68,27 @@ header nav ul li a {
 
 }
 
+/* pseduo-class navigation bar */
+header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+}
+ 
+/* pseduo-class the "get running" button */
+.hero-form button:hover {
+    background-color: #39a6b2;  
+}
+  
+/* pseduo-class the submit buttons */
+.contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
+}
+
+
+
 /* apply style to the footer section */
 footer {
     background: #fce138;
@@ -162,6 +183,14 @@ section {
     width: 100%;
     margin-bottom: 15px;
     border-radius: 10px;
+    /* update prior to pseduo-class class */
+    background-color: rgba(255,255,255, 0.75);
+}
+
+/* pseduo-class focus to input field */
+.form-input:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
 }
 
 .hero-form label {
@@ -413,7 +442,10 @@ section {
         font-size: 20px;
     }
 
-    footer h2, f
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
 }
   
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
