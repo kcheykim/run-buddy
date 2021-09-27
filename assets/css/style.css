@@ -188,7 +188,9 @@ section {
 }
 
 /* pseduo-class focus to input field */
-.form-input:focus {
+.form-input:focus, 
+.contact-form:focus,
+.contact-form textarea:focus {
     background-color: rgba(255,255,255, 1);
     outline: none;
 }
@@ -226,7 +228,6 @@ section {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -275,6 +276,10 @@ section {
     font-size: 26px;
     line-height: 1.5;
     color: #024e76;
+  }
+
+  .step:last-child {
+      border-bottom: 1px solid #39a6b2;
   }
 
   .section-title {
@@ -402,6 +407,7 @@ section {
     margin-bottom: 15px;
     margin-top: 5px;
     border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
   }
   
  .contact-form button {
